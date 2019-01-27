@@ -1,7 +1,7 @@
 clear all;
 close all;
 snr = 0;
-I = imread('images/lena.png');
+I = imread('../images/lena.png');
 
 % Convert Image to Grayscale - Taking the Green Channel Only
 I = I(:, :, 2);
@@ -67,4 +67,4 @@ legend('MSE - Noise','MSE - Smoothened 5x5', 'MSE - Smoothened 7x7', 'MSE - Smoo
 xlabel('SNR');
 ylabel('Mean Squared Error');
 grid on;
-saveas(h, 'Error','eps');
+saveas(h, 'Error','epsc');
